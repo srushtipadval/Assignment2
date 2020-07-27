@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="table.js"></script>
+</head>
+<body>
+	<div class="head">
+		<h1> Blogger Awards</h1>
+	</div>
+		<button class="btn" onclick="change('first');"> Home </button>
+	<button class="btn" onclick="change('regi');"> Registration </button>
+	<button class="btn" onclick="change('tab');"> table </button>
+	<div class="bg-image"></div>
+	<div class="bg-text">
+
+	<div class="home" id="first">
+		<p>Hi folks, you know The Game Awards is one of the biggest events in gaming industries where thousands of developers and producers announce their upcoming games. THese include Battle Royale, Strategy and AAA title games from famous devs. Get ready to experience new level of gaming by playing beta versions of these games for just during the events as developers agreed to test those on real crowd. And finally there is awards ceremony where awards will be givn to those games wom you guys voted for specific categories. So stay tuned and register as soon as possible as seats are limited and it happens only once per year and who knows what new games show up here and surprise you.</p>
+	</div>
+	<div class="reg_form" id="regi">
+		
+		<header>
+			<h1>Register</h1>
+		</header>
+		<form id="myForm" action="reg.html" method="post">
+			<div class="input">
+
+				<label>First name : </label>
+				<input id="fname" type="text" name="fname" required><br>
+			</div>
+				
+			<div class="input">
+				<label>Last name : </label>
+				<input id="lname" type="text" name="lname" required>
+
+			</div>
+
+			<div class="input">
+
+				<label>Username : </label>				<input id="username" type="text" name="username" required>
+
+			</div>
+
+			<div class="input">
+
+				<label>Email :</label>
+				<input id="ema" type="email" name="ema" required>
+
+			</div>
+
+	        <span>Choose your gender : </span>
+	        <br>
+	        <div id="gen">
+	        	<input type="radio" id="g1" name="gender" value="Male">Male 
+    			<input type="radio" id="g2" name="gender" value="Female">Female 
+    			<input type="radio" id="g3" name="gender" value="Others">Others 
+    		</div>
+
+			<div class="input">
+
+				<label>Age : </label>
+				<input id="age" type="integer" name="age" required>
+
+			</div>
+
+			<div class="input">
+
+				<label>Phone No : </label>
+				<input id="phn" type="number" name="phn" minlength="10" required>
+
+			</div>
+
+			<label for="bun">WHat kind of category would you like to vote?</label>
+          	<select name="category" id="category">
+            	<option value="Fashion and lifestyle">Fashion and lifestyle</option>
+            	<option value="Beauty">Beauty</option>
+            	<option value="Travel">Travel</option>
+          	</select>
+        </section>
+			<div class="input">
+				<button type="submit" class="btn" onclick="addRow();"> Submit </button>
+			</div>
+		</form>
+	</div>
+	<div class="data" id="tab">
+		<table border="3">
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Username</th>
+					<th>Email</th>
+					<th>Age</th>
+					<th>Contact</th>
+					<th>Gender</th>
+					<th>Category</th>
+					<th>Updated</th>
+				</tr>
+		</table>
+	</div>
+</div>
+
+</body>
+</html>
